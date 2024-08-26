@@ -1,0 +1,10 @@
+.nav-link a {
+    text-decoration: none;
+    font-weight: var(--medium);
+    font-size: 16px;
+    transition: linear var(--transition-time);
+}
+
+.nav-link a:hover {
+    color: var(--text-focused);
+}

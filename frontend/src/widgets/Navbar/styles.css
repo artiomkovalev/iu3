@@ -1,0 +1,38 @@
+.navbar-outer {
+    height: 59px;
+    border-bottom: 1px var(--border-color) solid;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 20;
+    background-color: var(--block-color);
+}
+
+.navbar-inner {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0px;
+    width: 99%;
+    max-width: var(--container-size);
+    align-items: center;
+}
+
+.navbar-items {
+    cursor: pointer;
+    display: flex;
+    padding: 0px 15px;
+    list-style-type: none;
+    gap: 12px;
+}
+
+@media (max-width: 1100px) {
+
+    .navbar-items {
+        display: none;
+    }
+
+}

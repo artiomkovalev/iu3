@@ -1,0 +1,49 @@
+.contact-information {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-information > div {
+    display: grid;
+    gap: 10px;
+}
+
+.contact-information .row {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-information .right .block {
+    width: 100%;
+}
+
+.contact-information .block div {
+    display: grid;
+    gap: 10px;
+}
+
+.contact-information .block {
+    height: auto;
+}
+
+.contact-information .block span {
+    height: fit-content;
+}
+
+@media (max-width: 975px) {
+
+    .contact-information {
+        display: grid;
+    }
+
+    .contact-information .row {
+        display: grid;
+    }
+
+    .contact-information .block {
+        max-width: calc(min(90vw, 722px));
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

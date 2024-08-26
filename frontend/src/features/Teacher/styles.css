@@ -1,0 +1,34 @@
+.flex {
+    display: flex;
+    gap: 10px;
+}
+
+.flex .content {
+    padding: 16px;
+    display: grid;
+    gap: 10px;
+    height: fit-content;
+}
+
+@media (max-width: 650px) {
+
+    .flex {
+        display: grid;
+        text-align: center;
+    }
+
+    .flex .link-more b {
+        display: none;
+    }
+
+    .flex .link-more a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex .avatar-outer {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

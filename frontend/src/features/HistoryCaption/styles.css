@@ -1,0 +1,26 @@
+.avatar-block {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.avatar-block .caption {
+    text-align: center;
+}
+
+.history-caption .content {
+    padding: 0px;
+}
+
+.history-caption {
+    gap: 15px;
+    text-align: left;
+}
+
+@media (max-width: 650px) {
+
+    .history-caption .avatar-block {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

@@ -1,0 +1,11 @@
+.logo {
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 28px;
+    transition: linear var(--transition-time);
+}
+
+.logo:hover {
+    color: var(--text-focused);
+}

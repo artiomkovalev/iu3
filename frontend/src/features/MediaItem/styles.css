@@ -1,0 +1,17 @@
+.media-item {
+    width: min(100vw, 622px);
+}
+
+.media-item video {
+    width: min(100vw, 622px);
+    object-fit: cover;
+}
+
+.media-item .block {
+    border-radius: 0px;
+    padding: 0px;
+}
+
+.media-item .content {
+    padding: 16px;
+}

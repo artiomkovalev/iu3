@@ -1,0 +1,14 @@
+.account-icon {
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    display: block;
+    width: 28px;
+    transition: linear var(--transition-time);
+    margin-left: auto;
+}
+
+.account-icon:hover {
+    color: var(--text-focused);
+}

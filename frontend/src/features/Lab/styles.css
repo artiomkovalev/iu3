@@ -1,0 +1,32 @@
+.flexlab {
+    display: flex;
+    gap: 10px;
+}
+
+.flexlab .content {
+    padding: 16px;
+    display: grid;
+    gap: 10px;
+    height: fit-content;
+}
+
+@media (max-width: 565px) {
+
+    .flexlab:not(:has(.thumbnail:only-child)):not(:empty) {
+        width: 90vw;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4, 120px);
+        grid-template-rows: minmax(100px, 1fr);
+        overflow-x: scroll;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .flexlab::-webkit-scrollbar {
+        display: none;
+    }
+
+}

@@ -1,0 +1,12 @@
+.avatar {
+    width: 126px;
+    height: 169px;
+    object-fit: cover;
+}
+
+.avatar-outer {
+    display: flex;
+    justify-content: center;
+    width: 126px;
+    height: 169px;
+}

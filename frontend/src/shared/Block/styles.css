@@ -1,0 +1,17 @@
+.block {
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+    padding: 16px;
+    height: fit-content;
+    background-color: var(--block-color);
+}
+
+.block .content {
+    display: grid;
+    gap: 5px;
+}
+
+.block .content a {
+    display: block;
+    color: var(--link-color);
+}

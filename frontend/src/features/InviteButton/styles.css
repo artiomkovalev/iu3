@@ -1,0 +1,21 @@
+.invite-button {
+    cursor: pointer;
+    background-color: var(--button-color);
+    border-radius: 12px;
+    margin: 10px 0px;
+    padding: 10px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.invite-button .description {
+    color: var(--link-color);
+}
+
+@media (max-width: 620px) {
+
+    .invite-button {
+        margin: 10px;
+    }
+
+}

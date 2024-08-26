@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --text-color: #212529;
+    --block-color: #FFF;
+    --border-color: #EFEFEF;
+    --text-focused: #4b515b;
+    --transition-time: .1s;
+    --button-color: #D1E7DD;
+    --link-color: #2E43FF;
+    --container-size: 1270px;
+    --green-accent: #15803D;
+    --red-accent: #DC2626;
+    --blue-accent: #236DF1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    color: var(--text-color)
+}
+
+html {
+    scroll-behavior: smooth;
+    /*cursor: url("cursor.svg"), auto;*/
+}
+
+/*body {
+    background: url("bmstu.png") #fff no-repeat center fixed;
+    background-size: cover;
+}*/
+
+.page-outer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.page-inner {
+    max-width: 1300px;
+}
+
+.page-inner .main-information {
+    user-select: none;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: darkgrey;
+}
+
+::-webkit-scrollbar-thumb {
+     background-color: #2c2c2c;
+     box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+     border-radius: 0px;
+}
+
+#map {
+    border-radius: 8px;
+}
+
+.block a {
+    color: var(--link-color);
+}

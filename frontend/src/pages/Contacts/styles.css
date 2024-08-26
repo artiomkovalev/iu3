@@ -1,0 +1,17 @@
+.contacts-page {
+    margin: 15px 0px;
+    display: grid;
+    gap: 10px;
+}
+
+img.map {
+    width: calc(min(100vw, 600px));
+}
+
+@media (max-width: 600px) {
+
+    .contacts-page .text:last-of-type {
+        text-align: center;
+    }
+
+}

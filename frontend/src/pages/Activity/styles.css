@@ -1,0 +1,49 @@
+.flexlist {
+    display: flex;
+    gap: 5px;
+    padding: 15px 0px;
+}
+
+.flexlist .part {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    gap: 10px;
+}
+
+@media (max-width: 900px) {
+    .flexlist {
+        display: grid;
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .badge-outer {
+        display: none;
+    }
+
+    div:has(> .badge-outer) {
+        display: block!important;
+    }
+
+}
+
+.link-more {
+    display: flex;
+}
+
+.link-more a {
+    margin-left: 5px;
+}
+
+.link-more span {
+    margin-left: 5px;
+}
+
+
+b {
+    font-weight: var(--medium);
+}

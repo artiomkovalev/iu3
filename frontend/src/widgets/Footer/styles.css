@@ -1,0 +1,6 @@
+footer {
+    width: 100%;
+    max-width: calc(var(--container-size) + 20px);
+    margin: 15px auto;
+    background-color: var(--block-color);
+}
