@@ -1,3 +1,6 @@
+/*
+  Ковалёв Артём, 2024
+*/
 import "./styles.css";
 import {useLocation} from "preact-iso";
 import {memo} from "preact/compat";
