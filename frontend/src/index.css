@@ -23,13 +23,7 @@
 
 html {
     scroll-behavior: smooth;
-    /*cursor: url("cursor.svg"), auto;*/
 }
-
-/*body {
-    background: url("bmstu.png") #fff no-repeat center fixed;
-    background-size: cover;
-}*/
 
 .page-outer {
     margin-top: 20px;
@@ -39,7 +33,7 @@ html {
 }
 
 .page-inner {
-    max-width: 1300px;
+    max-width: var(--container-size);
 }
 
 .page-inner .main-information {
@@ -66,8 +60,4 @@ html {
 
 #map {
     border-radius: 8px;
-}
-
-.block a {
-    color: var(--link-color);
 }

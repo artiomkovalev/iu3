@@ -4,13 +4,15 @@ import {
   Router,
   Route
 } from "preact-iso";
-import {Footer, Navbar} from "./widgets";
+import {Footer, Modal, Navbar} from "./widgets";
 import {Activity, Home, Staff, Labs, History, Contacts, Media, AI} from "./pages";
+import {ModalProvider} from "./contexts";
 
 export function App() {
 
   return (
-    <>
+    <ModalProvider>
+      <Modal />
       <LocationProvider>
         <ErrorBoundary>
           <Navbar />
@@ -27,7 +29,7 @@ export function App() {
           <Footer />
         </ErrorBoundary>
       </LocationProvider>
-    </>
+    </ModalProvider>
   );
 
 };

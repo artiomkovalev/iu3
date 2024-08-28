@@ -11,7 +11,7 @@
     gap: 5px;
 }
 
-.block .content a {
+.block a {
     display: block;
     color: var(--link-color);
 }

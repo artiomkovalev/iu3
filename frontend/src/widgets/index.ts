@@ -4,6 +4,7 @@ import Teachers from "./Teachers";
 import Footer from "./Footer";
 import LabList from "./LabList";
 import ContactInformation from "./ContactInformation";
+import Modal from "./Modal";
 
 export {
   Navbar,
@@ -11,5 +12,6 @@ export {
   Teachers,
   Footer,
   LabList,
-  ContactInformation
+  ContactInformation,
+  Modal
 };
