@@ -12,7 +12,7 @@ interface IModal {
 const defaultValue = {
   title: "Заголовок",
   content: "Контент",
-  displayModal: false,
+  displayModal: true,
   setModal: () => {},
   closeModal: () => {}
 };

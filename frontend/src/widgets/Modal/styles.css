@@ -1,3 +1,23 @@
+@keyframes modalOuterOn {
+    from { background-color: rgba(0, 0, 0, .0) }
+    to { background-color: rgba(0, 0, 0, 70%) }
+}
+
+@keyframes modalOuterOff {
+    from { background-color: rgba(0, 0, 0, 70%) }
+    to { background-color: rgba(0, 0, 0, .0) }
+}
+
+@keyframes modalBlockOn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+@keyframes modalBlockOff {
+    from { opacity: 1 }
+    to { opacity: 0 }
+}
+
 .modal-outer {
     position: fixed;
     top: 0;
@@ -7,6 +27,17 @@
     background-color: rgba(0, 0, 0, 70%);
     z-index: 100;
     align-content: center;
+    display: none;
+}
+
+.modal-outer.active {
+    display: block;
+    animation: modalOuterOn .3s ease-in-out;
+}
+
+.modal-outer.out {
+    display: block;
+    animation: modalOuterOff .3s ease-in-out;
 }
 
 .modal-inner {
@@ -15,6 +46,14 @@
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.modal-outer.active > .modal-inner {
+    animation: modalBlockOn .5s ease-in-out;
+}
+
+.modal-outer.out > .modal-inner {
+    animation: modalBlockOff .5s ease-in-out;
 }
 
 .modal-navbar {

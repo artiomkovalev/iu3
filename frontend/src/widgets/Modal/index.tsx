@@ -2,15 +2,21 @@ import "./styles.css";
 import {useModal} from "../../contexts";
 import {Title} from "../../shared";
 import CloseIcon from "./CloseIcon.tsx";
-import {memo, createPortal} from "preact/compat";
+import {memo, createPortal, useState, useEffect} from "preact/compat";
+
+type ModalState = "active"|"out"|"";
 
 function Modal() {
 
   const modal = useModal();
+  const [modalState, setModalState] = useState<ModalState>("");
+
+  useEffect(() => {
+    setModalState(modal.displayModal ? 'active' : '');
+  }, [modal]);
 
   const element = (<div
-    className="modal-outer"
-    style={{display: modal.displayModal ? 'normal' : 'none'}}
+    className={`modal-outer ${modalState}`}
   >
     <div className="modal-inner">
       <div className="modal-navbar">
@@ -20,7 +26,10 @@ function Modal() {
         />
         <div
           className="modal-icon"
-          onClick={modal.closeModal}
+          onClick={() => {
+            setModalState("out");
+            setTimeout(modal.closeModal, 290);
+          }}
           children={<CloseIcon/>}
         />
       </div>
