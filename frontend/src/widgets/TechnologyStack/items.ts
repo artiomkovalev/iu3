@@ -508,3 +508,160 @@ export const electronics = [
     subjectIds: [87, 381]
   }
 ];
+
+const ZE = 36;
+
+export const details = [
+  {
+    id: 66,
+    title: "Информатика",
+    degree: "b1",
+    hours: [5*ZE, 3*ZE, 0, 0, 0, 0, 0, 0],
+    description: "Цель дисциплины состоит в освоении студентами современных информационных технологий, формирование представления о задачах, реализуемых с их помощью, методах их решения, формирование алгоритмического мышления. Дисциплина реализует базовую подготовку по программированию, рассчитанную на студентов младших курсов.",
+    faculty: {
+      name: "Кафедра ИУ3, Информационные системы и технологии",
+      link: "https://iu3.bmstu.ru"
+    },
+    tutors: [
+      "Тренин Сергей Алексеевич",
+      "Видьманов Дмитрий Александрович",
+      "Попов Владислав Сергеевич",
+      "Локтев Даниил Алексеевич"
+    ],
+    technologies: [
+      {
+        logoUrl: "icons/C++.webp",
+        link: "https://isocpp.org/std/the-standard"
+      },
+      {
+        logoUrl: "icons/Aurora.webp",
+        link: "https://auroraos.ru/"
+      }
+    ]
+  },
+  {
+    id: 87,
+    title: "Методы и средства проектирования информационных систем и технологий",
+    degree: "b1",
+    hours: [0, 0, 0, 0, 0, 0, 4*ZE, 0],
+    description: "Дисциплина включает основные сведения о методах и средствах проектирования современных информационных устройств, систем и технологий. Рассматриваются темы, посвященные отбору исходных данных для проектирования, моделированию разрабатываемых устройств, систем и технологий, их разработке, тестированию и использованию. В лабораторном практикуме по дисциплине используются программные средства Multisim, Code Composer Studio, UML, а также лабораторные стенды MSP-EXP430FG4618 с набором информационных элементов (сенсоров) для измерения давления, температуры, влажности, расхода газа, положения, уровня, освещенности, и т.п.",
+    faculty: {
+      name: "Кафедра ИУ3, Информационные системы и технологии",
+      link: "https://iu3.bmstu.ru"
+    },
+    tutors: [
+      "Выхованец Валерий Святославович",
+      "Германчук Александр Игоревич"
+    ],
+    technologies: [
+      {
+        logoUrl: "icons/ARM.webp",
+        link: "https://www.arm.com/"
+      },
+      {
+        logoUrl: "icons/C++.webp",
+        link: "https://isocpp.org/std/the-standard"
+      },
+      {
+        logoUrl: "icons/TI.webp",
+        link: "https://www.ti.com/"
+      },
+      {
+        logoUrl: "icons/MultiSIm.webp",
+        link: "https://www.multisim.com/"
+      },
+      {
+        logoUrl: "icons/AutoDesk.webp",
+        link: "https://www.autodesk.com/"
+      },
+      {
+        logoUrl: "icons/qC.webp",
+        link: "https://weston-embedded.com/micrium-software"
+      },
+      {
+        logoUrl: "icons/LibreOffice.webp",
+        link: "https://ru.libreoffice.org/"
+      },
+      {
+        logoUrl: "icons/LibreCad.webp",
+        link: "https://www.librecad.org/"
+      },
+      {
+        logoUrl: "icons/Eclipse.webp",
+        link: "https://eclipseide.org/"
+      },
+      {
+        logoUrl: "icons/IE.webp",
+        link: "https://grouper.ieee.org/groups/1149/10/"
+      }
+    ]
+  },
+  {
+    id: 91,
+    title: "Учебный практикум на ЭВМ",
+    degree: "b1",
+    hours: [2*ZE, 0, 0, 0, 0, 0, 0, 0],
+    description: "Дисциплина посвящена изучению современных информационных технологий, формированию представления о задачах, реализуемых с их помощью, методов их решения, формированию алгоритмического мышления. Дисциплина реализует базовую подготовку по программированию на языке С++",
+    faculty: {
+      name: "Кафедра ИУ3, Информационные системы и технологии",
+      link: "https://iu3.bmstu.ru"
+    },
+    tutors: [
+      "Тренин Сергей Алексеевич",
+      "Видьманов Дмитрий Александрович",
+      "Попов Владислав Сергеевич",
+      "Локтев Даниил Алексеевич"
+    ],
+    technologies: [
+      {
+        logoUrl: "icons/C++.webp",
+        link: "https://isocpp.org/std/the-standard"
+      }
+    ]
+  },
+  {
+    id: 381,
+    title: "Микропроцессорные устройства обработки сигналов",
+    degree: "m",
+    hours: [0, 3 * ZE, 0, 0],
+    description: "",
+    faculty: {
+      name: "Кафедра ИУ3, Информационные системы и технологии",
+      link: "https://iu3.bmstu.ru"
+    },
+    tutors: [
+      "Выхованец Валерий Святославович",
+      "Германчук Александр Игоревич"
+    ],
+    technologies: [
+      {
+        logoUrl: "icons/TISTUDIO.webp",
+        link: "https://www.ti.com/tool/CCSTUDIO"
+      },
+      {
+        logoUrl: "icons/C++.webp",
+        link: "https://isocpp.org/std/the-standard"
+      },
+      {
+        logoUrl: "icons/qC.webp",
+        link: "https://weston-embedded.com/micrium-software"
+      },
+      {
+        logoUrl: "icons/MathCad.webp",
+        link: "https://www.mathcad.com/"
+      },
+      {
+        logoUrl: "icons/LibreOffice.webp",
+        link: "https://ru.libreoffice.org/"
+      },
+      {
+        logoUrl: "icons/Eclipse.webp",
+        link: "https://eclipseide.org/"
+      },
+      {
+        logoUrl: "icons/IE.webp",
+        link: "https://grouper.ieee.org/groups/1149/10/"
+      }
+    ]
+  }
+];
