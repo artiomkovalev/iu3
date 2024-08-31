@@ -20,16 +20,20 @@ function Card({
   title,
   description,
   coverUrl,
-  degrees
+  degrees,
+  onClick = () => {}
 }: {
+  id: number;
   title: string;
   description: string;
   coverUrl: string;
   degrees: string[];
+  onClick: () => void;
+  subjectIds: number[];
 }) {
 
   return (
-    <div className="card">
+    <div className="card" onClick={onClick}>
       <ImageCell src={coverUrl} />
       <div className="card-information">
         <div style={{ display: "flex", gap: "10px" }}>

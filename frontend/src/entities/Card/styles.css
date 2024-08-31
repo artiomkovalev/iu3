@@ -5,6 +5,7 @@
     border-radius: 8px;
     overflow: hidden;
     background-color: var(--block-color);
+    cursor: pointer;
 }
 
 .card .card-information {

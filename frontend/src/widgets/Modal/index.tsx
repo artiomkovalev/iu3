@@ -9,7 +9,20 @@ type ModalState = "active"|"out"|"";
 function Modal() {
 
   const modal = useModal();
+
   const [modalState, setModalState] = useState<ModalState>("");
+
+  useEffect(() => {
+    const onClick = () => {
+      setModalState("out");
+      if (!modal.closeModal) return;
+      setTimeout(modal.closeModal, 290);
+    };
+    if (modal.displayModal) {
+      document.body.addEventListener("click", onClick);
+      return () => document.body.removeEventListener("click", onClick);
+    };
+  }, [modal]);
 
   useEffect(() => {
     setModalState(modal.displayModal ? 'active' : '');
@@ -18,7 +31,7 @@ function Modal() {
   const element = (<div
     className={`modal-outer ${modalState}`}
   >
-    <div className="modal-inner">
+    <div className="modal-inner" onClick={(e) => e.stopPropagation()}>
       <div className="modal-navbar">
         <Title
           level={3}
@@ -28,6 +41,7 @@ function Modal() {
           className="modal-icon"
           onClick={() => {
             setModalState("out");
+            if (!modal.closeModal) return;
             setTimeout(modal.closeModal, 290);
           }}
           children={<CloseIcon/>}

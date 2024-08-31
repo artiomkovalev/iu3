@@ -4,15 +4,15 @@ import {ComponentChildren} from "preact";
 interface IModal {
   title: string;
   content: ComponentChildren;
-  displayModal: boolean;
-  setModal: (modal: IModal) => void;
-  closeModal: () => void;
+  displayModal?: boolean;
+  setModal?: (modal: IModal) => void;
+  closeModal?: () => void;
 };
 
 const defaultValue = {
   title: "Заголовок",
   content: "Контент",
-  displayModal: true,
+  displayModal: false,
   setModal: () => {},
   closeModal: () => {}
 };
