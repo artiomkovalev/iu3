@@ -2,7 +2,13 @@ import "./styles.css";
 import {ICard} from "../../types.ts";
 import {Title} from "../../shared";
 import {Cards} from "../../features";
-import * as constants from "./items";
+import {
+  programming,
+  informationTechnologies,
+  networks,
+  ai,
+  electronics
+} from "../../config";
 import {memo} from "preact/compat";
 
 const Technologies = memo(function ({
@@ -35,23 +41,23 @@ function TechnologyStack() {
       />
       <Technologies
         title="Программирование"
-        cards={constants.programming}
+        cards={programming}
       />
       <Technologies
         title="Информационные технологии"
-        cards={constants.informationTechnologies}
+        cards={informationTechnologies}
       />
       <Technologies
         title="Сети"
-        cards={constants.networks}
+        cards={networks}
       />
       <Technologies
         title="Искусственный интеллект"
-        cards={constants.ai}
+        cards={ai}
       />
       <Technologies
         title="Электроника"
-        cards={constants.electronics}
+        cards={electronics}
       />
     </div>
   );

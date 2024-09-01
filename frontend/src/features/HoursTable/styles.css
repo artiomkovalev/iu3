@@ -1,0 +1,19 @@
+.hours-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hours-table > * {
+    width: 100%;
+    max-width: 87px;
+    min-width: 64px;
+}
+
+.hours-table h4 {
+    font-size: 16px;
+}
+
+.hours-table .text {
+    text-align: center;
+}

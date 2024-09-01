@@ -1,0 +1,16 @@
+.details {
+    display: grid;
+    gap: 10px;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline a {
+    color: var(--link-color);
+}
+
+.inline .text {
+    display: inline;
+}

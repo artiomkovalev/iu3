@@ -2,12 +2,6 @@ import "./styles.css";
 import {Badge, ImageCell, Text, Title} from "../../shared";
 import {memo} from "preact/compat";
 
-const colorByDegree = {
-  b1: "var(--blue-accent)",
-  m: "var(--red-accent)",
-  b2: "var(--green-accent)"
-};
-
 const titleByDegree = {
   b1: "Б1",
   m: "М",
@@ -43,7 +37,7 @@ function Card({
           />
           {degrees.map(degree => (
             <Badge
-              color={colorByDegree[degree as Degree]}
+              degree={degree as Degree}
               children={titleByDegree[degree as Degree]}
             />
           ))}

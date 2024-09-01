@@ -1,0 +1,14 @@
+.tech-subject {
+    padding: 10px;
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tech-subject .name {
+    color: var(--link-color);
+    cursor: pointer;
+}
+
+.tech-subject .degree {
+    margin-left: auto;
+}

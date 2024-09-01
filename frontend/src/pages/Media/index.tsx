@@ -1,6 +1,6 @@
 import "./styles.css";
 import {Title} from "../../shared";
-import items from "./items";
+import {media} from "../../config";
 import {MediaItem} from "../../features";
 import {memo} from "preact/compat";
 
@@ -16,7 +16,7 @@ function Media() {
           />
         </div>
         <div className="media-items">
-          {items.map(item => <MediaItem key={item.src} {...item} />)}
+          {media.map(item => <MediaItem key={item.src} {...item} />)}
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import {ITeacher} from "./types.ts";
+import {ITeacher} from "../types/teachers";
 
 const items: ITeacher[] = [
   {

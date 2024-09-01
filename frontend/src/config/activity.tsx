@@ -1,4 +1,4 @@
-import {Badge, Text, Title} from "../../shared";
+import {Badge, Text, Title} from "../shared";
 
 export const mainBachelor = [
   <div style={{ display: "flex", gap: "auto" }}>
@@ -7,7 +7,7 @@ export const mainBachelor = [
       children="Бакалавр"
     />
     <div className="badge-outer" style={{ marginLeft: "auto" }}>
-      <Badge color="var(--blue-accent)" children="Б1" />
+      <Badge degree="b1" children="Б1" />
     </div>
   </div>,
   <Title
@@ -45,7 +45,7 @@ export const secondBachelor = [
       children="Бакалавр"
     />
     <div className="badge-outer" style={{ marginLeft: "auto" }}>
-      <Badge color="var(--green-accent)" children="Б2" />
+      <Badge degree="b2" children="Б2" />
     </div>
   </div>,
   <Title
@@ -87,7 +87,7 @@ export const magistracy = [
       children="Магистр"
     />
     <div className="badge-outer" style={{ marginLeft: "auto" }}>
-      <Badge color="var(--red-accent)" children="М" />
+      <Badge degree="m" children="М" />
     </div>
   </div>,
   <Title

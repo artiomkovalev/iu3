@@ -1,5 +1,5 @@
 import "./styles.css";
-import items from "./items.ts";
+import {pages} from "../../config";
 import {NavLink} from "../../shared";
 import {AccountIcon, Logo} from "../../features";
 import {memo} from "preact/compat";
@@ -11,7 +11,7 @@ function Navbar() {
       <nav className="navbar-inner">
         <Logo />
         <ul className="navbar-items">
-          {items.map((item) => <NavLink {...item} key={item.src} />)}
+          {pages.map((item) => <NavLink {...item} key={item.src} />)}
         </ul>
         <AccountIcon />
       </nav>

@@ -1,6 +1,13 @@
 import "./styles.css";
 import {Block, Title} from "../../shared";
-import {ciscoCenter, intelCenter, magistracy, magistracyRequirements, mainBachelor, secondBachelor} from "./items.tsx";
+import {
+  ciscoCenter,
+  intelCenter,
+  magistracy,
+  magistracyRequirements,
+  mainBachelor,
+  secondBachelor
+} from "../../config";
 import {memo} from "preact/compat";
 
 function Activity() {

@@ -1,5 +1,5 @@
 import "./styles.css";
-import items from "./items";
+import {labs} from "../../config";
 import {Lab} from "../../features";
 import {memo} from "preact/compat";
 
@@ -7,7 +7,7 @@ function LabList() {
 
   return (
     <div class="labs">
-      {items.map(item => <Lab {...item} key={item.title} />)}
+      {labs.map(item => <Lab {...item} key={item.title} />)}
     </div>
   );
 

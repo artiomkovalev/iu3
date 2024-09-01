@@ -1,12 +1,12 @@
 import "./styles.css";
-import items from "./items";
+import {history as configHistory} from "../../config";
 import {Text, Title} from "../../shared/Typography";
 import {HistoryCaption} from "../../features";
 import {memo} from "preact/compat";
 
 function generateHistory() {
   const content = [];
-  for (const item of items) {
+  for (const item of configHistory) {
     if (typeof item === "string") {
       content.push(<Text children={item} key={item} />);
     } else {

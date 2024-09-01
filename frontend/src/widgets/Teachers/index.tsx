@@ -1,8 +1,8 @@
 import "./styles.css";
 import {Text} from "../../shared";
-import items from "./items";
+import {teachers} from "../../config";
 import {Teacher} from "../../features";
-import {ILink, IText} from "./types.ts";
+import {ILink, IText} from "../../types/teachers";
 import {memo} from "preact/compat";
 
 function generateDescription(content: (IText | ILink)[]) {
@@ -20,7 +20,7 @@ function generateDescription(content: (IText | ILink)[]) {
 function Teachers() {
   return (
     <div className="teachers">
-      {items.map(item => <Teacher key={item.name} name={item.name} avatarUrl={item.avatarUrl} description={generateDescription(item.description)} />)}
+      {teachers.map(item => <Teacher key={item.name} name={item.name} avatarUrl={item.avatarUrl} description={generateDescription(item.description)} />)}
     </div>
   )
 };

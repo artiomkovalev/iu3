@@ -6,6 +6,8 @@ import Teacher from "./Teacher";
 import Lab from "./Lab";
 import HistoryCaption from "./HistoryCaption";
 import MediaItem from "./MediaItem";
+import TechSubjects from "./TechSubjects";
+import HoursTable from "./HoursTable";
 
 export {
   Logo,
@@ -15,5 +17,7 @@ export {
   Teacher,
   Lab,
   HistoryCaption,
-  MediaItem
+  MediaItem,
+  TechSubjects,
+  HoursTable
 };

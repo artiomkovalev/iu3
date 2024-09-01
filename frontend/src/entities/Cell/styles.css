@@ -1,0 +1,9 @@
+.cell {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.cell:has(.text:empty) {
+    padding: 0px;
+    height: 39px;
+}
