@@ -69,7 +69,10 @@ export function ModalProvider({
 
   const closeModal = useCallback(() => {
     setModalState("out");
-    setTimeout(() => setModalState(""), 290);
+    setTimeout(() => {
+      setModalState("");
+      setBack(null);
+    }, 290);
   }, [setModalState]);
 
   return (
