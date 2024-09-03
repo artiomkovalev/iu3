@@ -1,0 +1,50 @@
+@keyframes toobarOpen {
+    from { transform: translateX(-100%) }
+    to { transform: translateX(0) }
+}
+
+@keyframes toolbarClose {
+    from { transform: translateX(0) }
+    to { transform: translateX(-100%) }
+}
+
+.toolbar {
+    background-color: var(--block-color);
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all .3s;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.toolbar.active {
+    opacity: 1;
+    display: block;
+    transform: translateX(0);
+}
+
+.toolbar.out {
+    opacity: 0;
+    display: block;
+    transform: translateX(-100%);
+}
+
+.toolbar-items {
+    margin-left: 15px;
+    margin-top: 10px;
+    display: grid;
+    gap: 15px;
+    list-style-type: none;
+}
+
+.toolbar-items a {
+    font-size: 22px;
+}

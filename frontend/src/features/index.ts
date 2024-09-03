@@ -8,6 +8,7 @@ import HistoryCaption from "./HistoryCaption";
 import MediaItem from "./MediaItem";
 import TechSubjects from "./TechSubjects";
 import HoursTable from "./HoursTable";
+import Toolbar from "./Toolbar";
 
 export {
   Logo,
@@ -19,5 +20,6 @@ export {
   HistoryCaption,
   MediaItem,
   TechSubjects,
-  HoursTable
+  HoursTable,
+  Toolbar
 };

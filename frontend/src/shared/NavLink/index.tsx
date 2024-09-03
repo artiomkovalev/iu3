@@ -4,10 +4,12 @@ import {memo} from "preact/compat";
 
 function NavLink({
   src,
-  children
+  children,
+  onClick = () => {}
 }: {
   src: string;
   children: string;
+  onClick?: () => void;
 }) {
 
   const location = useLocation();
@@ -20,6 +22,7 @@ function NavLink({
         onClick={(e) => {
           e.preventDefault();
           location.route(src);
+          onClick();
         }}
       />
     </li>
