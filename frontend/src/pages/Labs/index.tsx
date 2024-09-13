@@ -1,21 +1,19 @@
-import {Title} from "../../shared";
+import {Page, Title} from "../../shared";
 import {LabList} from "../../widgets";
 import {memo} from "preact/compat";
 
 function Labs() {
 
   return (
-    <div className="page-outer">
-      <div className="page-inner">
-        <div className="main-information">
-          <Title
-            level={1}
-            children="Учебные и научные лаборатории"
-          />
-        </div>
-        <LabList />
+    <Page id="labs">
+      <div className="main-information">
+        <Title
+          level={1}
+          children="Учебные и научные лаборатории"
+        />
       </div>
-    </div>
+      <LabList />
+    </Page>
   );
 
 };

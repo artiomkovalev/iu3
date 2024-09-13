@@ -3,6 +3,7 @@ import {history as configHistory} from "../../config";
 import {Text, Title} from "../../shared/Typography";
 import {HistoryCaption} from "../../features";
 import {memo} from "preact/compat";
+import {Page} from "../../shared";
 
 function generateHistory() {
   const content = [];
@@ -21,19 +22,17 @@ const history = generateHistory();
 function History() {
 
   return (
-    <div className="page-outer">
-      <div className="page-inner">
-        <div className="main-information">
-          <Title
-            level={1}
-            children="История кафедры"
-          />
-        </div>
-        <div className="history">
-          {history}
-        </div>
+    <Page id="history">
+      <div className="main-information">
+        <Title
+          level={1}
+          children="История кафедры"
+        />
       </div>
-    </div>
+      <div className="history">
+        {history}
+      </div>
+    </Page>
   );
 
 };
