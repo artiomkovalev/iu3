@@ -12,7 +12,7 @@ function InviteButton() {
   return (
     <div
       className="invite-button"
-      onClick={() => location.route("/enter")}
+      onClick={() => location.route("/activity")}
     >
       <div className="description">Приём в бакалавриат и магистратуру</div>
     </div>

@@ -3,3 +3,10 @@
     height: 145px;
     user-select: none;
 }
+
+@media (max-width: 620px) {
+    .image-cell {
+        width: 95vw;
+        height: auto;
+    }
+}
