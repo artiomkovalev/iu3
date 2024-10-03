@@ -32,6 +32,8 @@
 ## Как запустить
 ```bash
 node src/index.js
+```
+```bash
 http://localhost:8080/
 ```
 
