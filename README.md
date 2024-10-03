@@ -16,6 +16,14 @@
 
 <details>
   <summary>Демонстрация функционала (Mobile)</summary>
+  <img src="github_img/mobile_main_page.png" alt="Главная страница"/>
+  <img src="github_img/mobile_degrees.png" alt="Поступающим"/>
+  <img src="github_img/mobile_staff.png" alt="Преподаватели"/>
+  <img src="github_img/mobile_labs.png" alt="Лаборатории"/>
+  <img src="github_img/mobile_history.png" alt="История кафедры"/>
+  <img src="github_img/mobile_media.png" alt="СМИ о нас"/>
+  <img src="github_img/mobile_ai.png" alt="Нейроквест"/>
+  <img src="github_img/mobile_contacts.png" alt="Контакты"/>
 </details>
 
 ## О проекте
