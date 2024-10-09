@@ -14,7 +14,7 @@ function Home() {
         />
         <Subtitle
           level={1}
-          children="Информационные системы и технологии"
+          children="Информационные системы и телекоммуникации"
         />
         <Subtitle
           level={2}
