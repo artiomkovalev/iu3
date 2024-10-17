@@ -2,20 +2,12 @@ import "./styles.css";
 import {Page, Text, Title} from "../../shared";
 import {memo, useEffect} from "preact/compat";
 import {ContactInformation} from "../../widgets";
+import loadMapScript from "./loadMapScript";
 
 function Contacts() {
 
   useEffect(() => {
-    const mainScript = document.createElement("script");
-    mainScript.src = "https://maps.api.2gis.ru/2.0/js/?version=v3.7.4";
-    mainScript.type = "text/javascript";
-    const loaderScript = document.createElement("script");
-    loaderScript.src = "https://maps.api.2gis.ru/2.0/loader.js";
-    const mapScript = document.createElement("script");
-    mapScript.src = "scripts/map.js";
-    document.body.appendChild(mainScript);
-    document.body.appendChild(loaderScript);
-    document.body.appendChild(mapScript);
+    const [mainScript, loaderScript, mapScript] = loadMapScript();
     return () => {
       mapScript.remove();
       loaderScript.remove();

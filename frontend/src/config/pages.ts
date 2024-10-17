@@ -3,6 +3,7 @@ export default [
   { src: "/staff", children: "Преподаватели" },
   { src: "/labs", children: "Лаборатории" },
   { src: "/history", children: "История" },
+  { src: "/plans/iu3_merged.pdf", children: "Учебные планы" },
   { src: "/media", children: "СМИ о нас" },
   { src: "/ai", children: "Нейро-квест" },
   { src: "/contacts", children: "Контакты" }

@@ -1,3 +1,27 @@
+@media (min-width: 1102px) {
+
+    .nav-link {
+        height: 60px;
+        line-height: 60px;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    .nav-link.active {
+        border-bottom: 3px solid #1F78FF;
+    }
+
+    .nav-link.active a {
+        color: #1F78FF!important;
+    }
+
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
 .nav-link a {
     text-decoration: none;
     font-weight: var(--medium);

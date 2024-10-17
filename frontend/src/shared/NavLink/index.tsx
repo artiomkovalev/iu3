@@ -15,12 +15,13 @@ function NavLink({
   const location = useLocation();
 
   return (
-    <li className="nav-link">
+    <li className={`nav-link${window.location.pathname === src ? ' active' : ''}`}>
       <a
         href={src}
         children={children}
         onClick={(e) => {
           e.preventDefault();
+          if (src.includes("plans")) return window.location.href = "/plans/iu3_merged.pdf";
           location.route(src);
           onClick();
         }}

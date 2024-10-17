@@ -1,7 +1,7 @@
 import "./styles.css";
 import {pages} from "../../config";
 import {NavLink} from "../../shared";
-import {/*AccountIcon,*/ Logo} from "../../features";
+import { Logo, NavList } from "../../features";
 import {memo} from "preact/compat";
 import {Toolbar} from "../../features";
 
@@ -13,7 +13,7 @@ function Navbar() {
         <Toolbar />
         <Logo />
         <ul className="navbar-items">
-          {pages.map((item) => <NavLink {...item} key={item.src} />)}
+          {pages.map((item) => !item.src.includes("plans") ? <NavLink {...item} key={item.src} /> : <NavList {...item} key={item.src} />)}
         </ul>
       </nav>
     </div>

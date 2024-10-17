@@ -9,6 +9,7 @@ import MediaItem from "./MediaItem";
 import TechSubjects from "./TechSubjects";
 import HoursTable from "./HoursTable";
 import Toolbar from "./Toolbar";
+import NavList from "./NavList";
 
 export {
   Logo,
@@ -21,5 +22,6 @@ export {
   MediaItem,
   TechSubjects,
   HoursTable,
-  Toolbar
+  Toolbar,
+  NavList
 };
