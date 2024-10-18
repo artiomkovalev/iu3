@@ -18,12 +18,12 @@
     opacity: 1;
 }
 
-.content {
+.list .content {
     padding: 10px;
     transition: background-color .3s;
     line-height: normal!important;
 }
 
-.content:hover {
+.list .content:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }

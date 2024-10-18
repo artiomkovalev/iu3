@@ -1,4 +1,4 @@
 User-agent: *
-Allow: *
+Disallow: /
 
 Sitemap: https://iu3.bmstu.ru/sitemap.xml
