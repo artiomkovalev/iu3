@@ -1,5 +1,5 @@
 import "./styles.css";
-import { memo, useState } from "preact/compat";
+import {memo, useEffect, useState} from "preact/compat";
 import ArrowDown from "./ArrowDown";
 import plans from "../../config/plans";
 
@@ -12,6 +12,13 @@ function NavList({
 }) {
 
   const [isActive, setIsActive] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (!isActive) return;
+    const onClick = () => setIsActive(false);
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
+  }, [isActive]);
 
   return (
     <li className="nav-link nav-list">

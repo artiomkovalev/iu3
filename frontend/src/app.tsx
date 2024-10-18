@@ -8,6 +8,24 @@ import {Footer, Modal, Navbar} from "./widgets";
 import {Activity, Home, Staff, Labs, History, Contacts, Media, AI} from "./pages";
 import {ModalProvider} from "./contexts";
 
+function ModalWarn() {
+
+  /*const modal = useModal();
+
+  useEffect(() => {
+    modal.openModal({
+      title: "Внимание",
+      content: <div>
+        <Text>Данный сайт не является официальным сайтом кафедры. Все материалы принадлежат кафедре ИУ3 МГТУ имени Н.Э. Баумана</Text>
+        <div className="button" onClick={modal.closeModal}>Хорошо</div>
+      </div>
+    });
+  }, []);*/
+
+  return null;
+
+};
+
 export function App() {
 
   return (
@@ -16,6 +34,7 @@ export function App() {
       <LocationProvider>
         <ErrorBoundary>
           <Navbar />
+          <ModalWarn />
           <Router>
             <Route path="/" component={Home} />
             <Route path="/activity" component={Activity} />
