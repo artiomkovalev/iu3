@@ -1,7 +1,7 @@
 import "./styles.css";
 import {memo, useEffect, useState} from "preact/compat";
 import ArrowDown from "./ArrowDown";
-import plans from "../../config/plans";
+import plans from "../../config/plans.ts";
 
 function NavList({
   src,
