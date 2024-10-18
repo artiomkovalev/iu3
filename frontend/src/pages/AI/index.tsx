@@ -17,7 +17,7 @@ function AI() {
   useEffect(() => {
 
     async function fetchPosts() {
-      const response = await axios.get(`http://localhost:8080/api/comics/last?offset=${offset}`);
+      const response = await axios.get(`/api/comics/last?offset=${offset}`);
       gotEmpty = response.data.items.length === 0;
       setComics([...comics, ...response.data.items]);
     };
@@ -63,7 +63,7 @@ function AI() {
         {comics.map((item, idx) => (
           <img
             className={`carousel-item ${idx === index ? 'active' : ''} ${idx === index-1 ? 'start' : ''}`}
-            src={"http://localhost:8080/" + item.src}
+            src={"/" + item.src}
             key={item.id}
             alt="Комикс"
           />
