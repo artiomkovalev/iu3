@@ -5,7 +5,7 @@ import {
   Route
 } from "preact-iso";
 import {Footer, Modal, Navbar} from "./widgets";
-import {Activity, Home, Staff, Labs, History, Contacts, Media, AI} from "./pages";
+import {Activity, Home, Staff, Labs, History, Contacts, Media, AI, Second, Altera, Cisco} from "./pages";
 import {ModalProvider} from "./contexts";
 
 function ModalWarn() {
@@ -44,6 +44,9 @@ export function App() {
             <Route path="/contacts" component={Contacts} />
             <Route path="/media" component={Media} />
             <Route path="/ai" component={AI} />
+            <Route path="/second" component={Second} />
+            <Route path="/altera" component={Altera} />
+            <Route path="/cisco" component={Cisco} />
           </Router>
           <Footer />
         </ErrorBoundary>

@@ -32,9 +32,9 @@ export const mainBachelor = [
   <Text
     children={`— создание и сопровождение интернет-пространства различных предприятий и учреждений.`}
   />,
-  <span className="link-more"><b>Учебный план:</b><a href="iu3_spb.pdf" children="iu3_spb.pdf" /></span>,
+  <span className="link-more"><b>Учебный план:</b><a onClick={() => location.href = "/plans/iu3_spb.pdf"} href="/activity" children="iu3_spb.pdf" /></span>,
   <span className="link-more"><b>Преподаватели:</b><a href="/staff" children="iu3.bmstu.ru/staff" /></span>,
-  <span><b>Проходные баллы прошлых лет:</b><a href="bmstu.ru/bachelor/majors/informacionnye-sistemy-i-tehnologii-090302" children="bmstu.ru/bachelor/majors/informacionnye-sistemy-i-tehnologii-090302" /></span>,
+  <span><b>Проходные баллы прошлых лет:</b><a href="https://bmstu.ru/bachelor/majors/informacionnye-sistemy-i-tehnologii-090302" children="bmstu.ru/bachelor/majors/informacionnye-sistemy-i-tehnologii-090302" /></span>,
   <span>Подробнее о правилах приёма и документах для подачи заявления: <a href="https://bmstu.ru/bachelor" children="bmstu.ru/bachelor" /></span>
 ];
 
@@ -124,8 +124,8 @@ export const magistracy = [
   <Text
     children={`Выпускники кафедры ИУ-3 востребованы в ведущих российских и международных IT-компаниях по разработке программного обеспечения, а также инновационных стартапах в сфере создания интеллектуальных информационных систем. Среди компаний, где работают наши выпускники Организация развития видеоигровой индустрии, Mensa VR, Indie GO, Games Lab, Штрих-М, ВК, Яндекс, 1С, СберТех, Газпром, РПКБ, Крок.`}
   />,
-  <span className="link-more"><b>Учебный план:</b><a href="iu3_spmd.pdf" children="iu3_spmd.pdf" /></span>,
-  <span className="link-more"><b>Учебный план GameDev:</b><a href="iu3_spmg.pdf" children="iu3_spmg.pdf" /></span>,
+  <span className="link-more"><b>Учебный план:</b><a onClick={() => location.href = "/plans/iu3_spmd.pdf"} href="/activity" children="iu3_spmd.pdf" /></span>,
+  <span className="link-more"><b>Учебный план GameDev:</b><a onClick={() => location.href = "/plans/iu3_spmg.pdf"} href="/activity" children="iu3_spmg.pdf" /></span>,
   <span className="link-more"><b>Преподаватели:</b><a href="/staff" children="iu3.bmstu.ru/staff" /></span>,
   <span>Подробнее о правилах приёма и документах для подачи заявления: <a href="https://bmstu.ru/magistracy" children="bmstu.ru/magistracy" /></span>
 ];

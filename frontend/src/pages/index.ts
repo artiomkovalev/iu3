@@ -6,6 +6,9 @@ import History from "./History";
 import Contacts from "./Contacts";
 import Media from "./Media";
 import AI from "./AI";
+import Second from "./Second";
+import Altera from "./Altera";
+import Cisco from "./Cisco";
 
 export {
   Home,
@@ -15,5 +18,8 @@ export {
   History,
   Contacts,
   Media,
-  AI
+  AI,
+  Second,
+  Altera,
+  Cisco
 };

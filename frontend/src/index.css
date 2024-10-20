@@ -76,3 +76,50 @@ html {
 .button:hover {
     background-color: rgba(0, 0, 0, .93);
 }
+
+.photo {
+    display: block;
+    margin: 10px auto;
+}
+
+@media ( max-width: 600px ) {
+
+    .photo {
+        max-width: 90vw;
+    }
+
+    .modal-content .block {
+        width: 80vw!important;
+    }
+
+}
+
+ol, ul {
+    margin-left: 20px;
+}
+
+.modal-content h3 {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.modal-content .cell h3 {
+    padding: 0;
+}
+
+.modal-content h4 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.modal-content .cell h4 {
+    padding: 0;
+}
+
+.modal-content .text {
+    margin: 8px 0;
+}
+
+.modal-content .cell .text {
+    margin: 0;
+}
