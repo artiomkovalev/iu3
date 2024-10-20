@@ -5,6 +5,6 @@ export default [
   { src: "/history", children: "История" },
   { src: "/plans/iu3_merged.pdf", children: "Учебные планы" },
   { src: "/media", children: "СМИ о нас" },
-  { src: "/ai", children: "Нейро-квест" },
+  { src: "/ai", children: "Нейроквест" },
   { src: "/contacts", children: "Контакты" }
 ];

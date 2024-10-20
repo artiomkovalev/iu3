@@ -43,6 +43,11 @@ function AI() {
           level={2}
           children="Вот что сейчас происходит на кафедре!"
         />
+        <div style={{ margin: "10px" }}>
+          <Text
+            children="Эти изображения полученны с IP-видеокамеры, установленной в холле кафедры, обработаны в реальном времени и превращены нейросетью в комиксы."
+          />
+        </div>
         <div style={{ marginTop: "10px" }} />
         <Text
           children={comics[index] ? comics[index].date : 'Загрузка...'}
