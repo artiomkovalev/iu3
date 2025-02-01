@@ -21,15 +21,17 @@ function NavList({
   }, [isActive]);
 
   return (
-    <li className="nav-link nav-list">
+    <li
+      className="nav-link nav-list"
+      onClick={(e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        setIsActive(!isActive);
+      }}
+    >
       <a
         href={src}
         children={children}
-        onClick={(e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            setIsActive(!isActive);
-        }}
       />
       <ArrowDown />
       <div className={`list ${isActive ? 'active' : ''}`}>

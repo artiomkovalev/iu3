@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@font-face {
+    font-family: ALS Sector;
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/ALS_Sector-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: ALS Sector;
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/ALS_Sector-Bold.otf") format("opentype");
+}
 
 :root {
     --text-color: #212529;
@@ -17,8 +29,10 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Rubik', sans-serif;
-    color: var(--text-color)
+    font-family: 'ALS Sector', sans-serif;
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 html {
